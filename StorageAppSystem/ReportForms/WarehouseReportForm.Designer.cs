@@ -36,6 +36,7 @@
             label2 = new Label();
             wareProductGridView = new DataGridView();
             filterBtn = new Button();
+            resetBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)warehousesDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)wareProductGridView).BeginInit();
             SuspendLayout();
@@ -115,13 +116,24 @@
             filterBtn.TabIndex = 8;
             filterBtn.Text = "Filter";
             filterBtn.UseVisualStyleBackColor = true;
-            filterBtn.Click += this.filterBtn_Click;
+            filterBtn.Click += filterBtn_Click;
+            // 
+            // resetBtn
+            // 
+            resetBtn.Location = new Point(1422, 16);
+            resetBtn.Name = "resetBtn";
+            resetBtn.Size = new Size(94, 29);
+            resetBtn.TabIndex = 9;
+            resetBtn.Text = "Reset";
+            resetBtn.UseVisualStyleBackColor = true;
+            resetBtn.Click += resetBtn_Click;
             // 
             // WarehouseReportForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1528, 480);
+            Controls.Add(resetBtn);
             Controls.Add(filterBtn);
             Controls.Add(wareProductGridView);
             Controls.Add(label2);
@@ -149,5 +161,6 @@
         private Label label2;
         private DataGridView wareProductGridView;
         private Button filterBtn;
+        private Button resetBtn;
     }
 }

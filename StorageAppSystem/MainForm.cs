@@ -129,7 +129,7 @@ namespace StorageAppSystem
         private void productsReportToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ProductForm form = new ProductForm();
+            ProductReportForm form = new ProductReportForm();
             form.Show();
         }
 
@@ -137,6 +137,13 @@ namespace StorageAppSystem
         {
             this.Hide();
             WarehouseReportForm form = new WarehouseReportForm();
+            form.Show();
+        }
+
+        private void warehouseMultiReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            WarehouseMultiSelectReportForm form = new WarehouseMultiSelectReportForm();
             form.Show();
         }
     }

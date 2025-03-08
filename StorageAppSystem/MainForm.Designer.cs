@@ -46,6 +46,7 @@
             ordersReportToolStripMenuItem = new ToolStripMenuItem();
             expirayReportToolStripMenuItem = new ToolStripMenuItem();
             transferBulkProductsToolStripMenuItem = new ToolStripMenuItem();
+            warehouseMultiReportToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -145,7 +146,7 @@
             // 
             // reportsToolStripMenuItem
             // 
-            reportsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { warehouseReportToolStripMenuItem, productsReportToolStripMenuItem, ordersReportToolStripMenuItem, expirayReportToolStripMenuItem });
+            reportsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { warehouseReportToolStripMenuItem, productsReportToolStripMenuItem, ordersReportToolStripMenuItem, expirayReportToolStripMenuItem, warehouseMultiReportToolStripMenuItem });
             reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
             reportsToolStripMenuItem.Size = new Size(74, 24);
             reportsToolStripMenuItem.Text = "Reports";
@@ -153,28 +154,28 @@
             // warehouseReportToolStripMenuItem
             // 
             warehouseReportToolStripMenuItem.Name = "warehouseReportToolStripMenuItem";
-            warehouseReportToolStripMenuItem.Size = new Size(224, 26);
+            warehouseReportToolStripMenuItem.Size = new Size(248, 26);
             warehouseReportToolStripMenuItem.Text = "Warehouse Report";
             warehouseReportToolStripMenuItem.Click += warehouseReportToolStripMenuItem_Click;
             // 
             // productsReportToolStripMenuItem
             // 
             productsReportToolStripMenuItem.Name = "productsReportToolStripMenuItem";
-            productsReportToolStripMenuItem.Size = new Size(224, 26);
+            productsReportToolStripMenuItem.Size = new Size(248, 26);
             productsReportToolStripMenuItem.Text = "Products Report";
             productsReportToolStripMenuItem.Click += productsReportToolStripMenuItem_Click;
             // 
             // ordersReportToolStripMenuItem
             // 
             ordersReportToolStripMenuItem.Name = "ordersReportToolStripMenuItem";
-            ordersReportToolStripMenuItem.Size = new Size(224, 26);
+            ordersReportToolStripMenuItem.Size = new Size(248, 26);
             ordersReportToolStripMenuItem.Text = "Orders Report";
             ordersReportToolStripMenuItem.Click += ordersReportToolStripMenuItem_Click;
             // 
             // expirayReportToolStripMenuItem
             // 
             expirayReportToolStripMenuItem.Name = "expirayReportToolStripMenuItem";
-            expirayReportToolStripMenuItem.Size = new Size(224, 26);
+            expirayReportToolStripMenuItem.Size = new Size(248, 26);
             expirayReportToolStripMenuItem.Text = "Expiry Report";
             expirayReportToolStripMenuItem.Click += expirayReportToolStripMenuItem_Click;
             // 
@@ -184,6 +185,13 @@
             transferBulkProductsToolStripMenuItem.Size = new Size(168, 24);
             transferBulkProductsToolStripMenuItem.Text = "Transfer Bulk Products";
             transferBulkProductsToolStripMenuItem.Click += transferProduct_Click;
+            // 
+            // warehouseMultiReportToolStripMenuItem
+            // 
+            warehouseMultiReportToolStripMenuItem.Name = "warehouseMultiReportToolStripMenuItem";
+            warehouseMultiReportToolStripMenuItem.Size = new Size(248, 26);
+            warehouseMultiReportToolStripMenuItem.Text = "WarehouseMulti Report";
+            warehouseMultiReportToolStripMenuItem.Click += warehouseMultiReportToolStripMenuItem_Click;
             // 
             // MainForm
             // 
@@ -223,5 +231,6 @@
         private ToolStripMenuItem productsReportToolStripMenuItem;
         private ToolStripMenuItem ordersReportToolStripMenuItem;
         private ToolStripMenuItem expirayReportToolStripMenuItem;
+        private ToolStripMenuItem warehouseMultiReportToolStripMenuItem;
     }
 }
