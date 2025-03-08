@@ -71,7 +71,6 @@ namespace StorageAppSystem.ReportForms
                 w.OrderDate
             }).ToList();
             dataGridView1.DataSource = data.Where(d => d.OrderDate >= fromDate && d.OrderDate <= toDate).ToList();
-
         }
 
         private void resetBtn_Click(object sender, EventArgs e)
@@ -90,14 +89,5 @@ namespace StorageAppSystem.ReportForms
             dateTimePicker2.Value = DateTime.Now;
         }
     }
-    public class OrderProductDto
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Barcode { get; set; }
-        public DateTime AddedOn { get; set; } = DateTime.Now;
-        public int WarehouseId { get; set; }
-        public string WarehouseName { get; set; }
-        public DateTime OrderDate { get; set; }
-    }
+
 }

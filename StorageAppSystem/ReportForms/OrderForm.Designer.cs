@@ -35,6 +35,8 @@
             dateTimePicker1 = new DateTimePicker();
             filterBtn = new Button();
             resetBtn = new Button();
+            label2 = new Label();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -60,6 +62,8 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(dateTimePicker2);
             groupBox1.Controls.Add(dateTimePicker1);
             groupBox1.Location = new Point(135, 12);
@@ -78,7 +82,7 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(34, 30);
+            dateTimePicker1.Location = new Point(68, 28);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(250, 27);
             dateTimePicker1.TabIndex = 0;
@@ -103,6 +107,24 @@
             resetBtn.UseVisualStyleBackColor = true;
             resetBtn.Click += resetBtn_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(498, 30);
+            label2.Name = "label2";
+            label2.Size = new Size(25, 20);
+            label2.TabIndex = 18;
+            label2.Text = "To";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(6, 31);
+            label1.Name = "label1";
+            label1.Size = new Size(43, 20);
+            label1.TabIndex = 17;
+            label1.Text = "From";
+            // 
             // OrderForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -118,6 +140,7 @@
             Load += OrderForm_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -130,5 +153,7 @@
         private DateTimePicker dateTimePicker1;
         private Button filterBtn;
         private Button resetBtn;
+        private Label label1;
+        private Label label2;
     }
 }
