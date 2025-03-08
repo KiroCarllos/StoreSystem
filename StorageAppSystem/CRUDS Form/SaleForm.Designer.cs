@@ -115,6 +115,7 @@
             wareComboBox.Name = "wareComboBox";
             wareComboBox.Size = new Size(414, 28);
             wareComboBox.TabIndex = 9;
+            wareComboBox.SelectedIndexChanged += wareComboBox_SelectedIndexChanged;
             // 
             // label1
             // 

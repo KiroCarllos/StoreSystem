@@ -302,5 +302,10 @@ namespace StorageAppSystem
                 loadOrders();
             }
         }
+
+        private void wareComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -2,10 +2,11 @@ using MetroFramework.Forms;
 using Microsoft.EntityFrameworkCore;
 using StorageAppSystem.Data;
 using StorageAppSystem.Models;
+using StorageAppSystem.ReportForms;
 
 namespace StorageAppSystem
 {
-    public partial class MainForm : MetroForm
+    public partial class MainForm : Form
     {
         private readonly AppDBContext db;
 
@@ -102,6 +103,40 @@ namespace StorageAppSystem
         {
             this.Hide();
             SaleForm form = new SaleForm();
+            form.Show();
+        }
+        private void transferProduct_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TransferProductForm form = new TransferProductForm();
+            form.Show();
+        }
+
+        private void expirayReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ExpiryForm form = new ExpiryForm();
+            form.Show();
+        }
+
+        private void ordersReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OrderForm form = new OrderForm();
+            form.Show();
+        }
+
+        private void productsReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ProductForm form = new ProductForm();
+            form.Show();
+        }
+
+        private void warehouseReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            WarehouseReportForm form = new WarehouseReportForm();
             form.Show();
         }
     }
