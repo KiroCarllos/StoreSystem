@@ -35,6 +35,7 @@
             label1 = new Label();
             label2 = new Label();
             wareProductGridView = new DataGridView();
+            filterBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)warehousesDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)wareProductGridView).BeginInit();
             SuspendLayout();
@@ -60,18 +61,18 @@
             warehousesDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             warehousesDataGridView.Size = new Size(555, 376);
             warehousesDataGridView.TabIndex = 2;
-            warehousesDataGridView.MouseClick += this.warehousesDataGridView_MouseClick;
+            warehousesDataGridView.MouseClick += warehousesDataGridView_MouseClick;
             // 
             // fromDateTimePicker
             // 
-            fromDateTimePicker.Location = new Point(99, 58);
+            fromDateTimePicker.Location = new Point(485, 11);
             fromDateTimePicker.Name = "fromDateTimePicker";
             fromDateTimePicker.Size = new Size(250, 27);
             fromDateTimePicker.TabIndex = 3;
             // 
             // toDateTimePicker
             // 
-            toDateTimePicker.Location = new Point(660, 58);
+            toDateTimePicker.Location = new Point(866, 14);
             toDateTimePicker.Name = "toDateTimePicker";
             toDateTimePicker.Size = new Size(250, 27);
             toDateTimePicker.TabIndex = 4;
@@ -79,7 +80,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 63);
+            label1.Location = new Point(424, 12);
             label1.Name = "label1";
             label1.Size = new Size(43, 20);
             label1.TabIndex = 5;
@@ -88,7 +89,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(602, 65);
+            label2.Location = new Point(825, 16);
             label2.Name = "label2";
             label2.Size = new Size(25, 20);
             label2.TabIndex = 6;
@@ -96,18 +97,32 @@
             // 
             // wareProductGridView
             // 
+            wareProductGridView.AllowUserToAddRows = false;
             wareProductGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            wareProductGridView.Location = new Point(660, 91);
+            wareProductGridView.Location = new Point(592, 101);
+            wareProductGridView.MultiSelect = false;
             wareProductGridView.Name = "wareProductGridView";
             wareProductGridView.RowHeadersWidth = 51;
-            wareProductGridView.Size = new Size(417, 376);
+            wareProductGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            wareProductGridView.Size = new Size(930, 376);
             wareProductGridView.TabIndex = 7;
+            // 
+            // filterBtn
+            // 
+            filterBtn.Location = new Point(1144, 12);
+            filterBtn.Name = "filterBtn";
+            filterBtn.Size = new Size(94, 29);
+            filterBtn.TabIndex = 8;
+            filterBtn.Text = "Filter";
+            filterBtn.UseVisualStyleBackColor = true;
+            filterBtn.Click += this.filterBtn_Click;
             // 
             // WarehouseReportForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1112, 552);
+            ClientSize = new Size(1528, 480);
+            Controls.Add(filterBtn);
             Controls.Add(wareProductGridView);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -133,5 +148,6 @@
         private Label label1;
         private Label label2;
         private DataGridView wareProductGridView;
+        private Button filterBtn;
     }
 }
