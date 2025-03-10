@@ -43,18 +43,20 @@
             // 
             // backBtn
             // 
+            backBtn.BackColor = Color.FromArgb(216, 196, 182);
+            backBtn.ForeColor = Color.FromArgb(62, 88, 121);
             backBtn.Location = new Point(22, 8);
             backBtn.Name = "backBtn";
             backBtn.Size = new Size(94, 29);
             backBtn.TabIndex = 0;
             backBtn.Text = "Back";
-            backBtn.UseVisualStyleBackColor = true;
+            backBtn.UseVisualStyleBackColor = false;
             backBtn.Click += backBtn_Click;
             // 
             // toComboBox
             // 
             toComboBox.FormattingEnabled = true;
-            toComboBox.Location = new Point(748, 62);
+            toComboBox.Location = new Point(736, 67);
             toComboBox.Name = "toComboBox";
             toComboBox.Size = new Size(405, 28);
             toComboBox.TabIndex = 1;
@@ -63,7 +65,7 @@
             // fromComboBox
             // 
             fromComboBox.FormattingEnabled = true;
-            fromComboBox.Location = new Point(168, 59);
+            fromComboBox.Location = new Point(138, 59);
             fromComboBox.Name = "fromComboBox";
             fromComboBox.Size = new Size(396, 28);
             fromComboBox.TabIndex = 2;
@@ -81,7 +83,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(602, 65);
+            label2.Location = new Point(630, 67);
             label2.Name = "label2";
             label2.Size = new Size(100, 20);
             label2.TabIndex = 4;
@@ -90,6 +92,7 @@
             // fromDataGridView
             // 
             fromDataGridView.AllowUserToAddRows = false;
+            fromDataGridView.BackgroundColor = Color.FromArgb(216, 196, 182);
             fromDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             fromDataGridView.EditMode = DataGridViewEditMode.EditProgrammatically;
             fromDataGridView.Location = new Point(12, 119);
@@ -103,9 +106,11 @@
             // 
             // transferBtn
             // 
-            transferBtn.Location = new Point(446, 555);
+            transferBtn.BackColor = Color.FromArgb(216, 196, 182);
+            transferBtn.ForeColor = Color.FromArgb(62, 88, 121);
+            transferBtn.Location = new Point(324, 527);
             transferBtn.Name = "transferBtn";
-            transferBtn.Size = new Size(212, 29);
+            transferBtn.Size = new Size(523, 29);
             transferBtn.TabIndex = 7;
             transferBtn.Text = "Transfer";
             transferBtn.UseVisualStyleBackColor = false;
@@ -113,17 +118,20 @@
             // 
             // resetBtn
             // 
+            resetBtn.BackColor = Color.FromArgb(216, 196, 182);
+            resetBtn.ForeColor = Color.FromArgb(62, 88, 121);
             resetBtn.Location = new Point(1064, 8);
             resetBtn.Name = "resetBtn";
             resetBtn.Size = new Size(94, 29);
             resetBtn.TabIndex = 8;
             resetBtn.Text = "Reset";
-            resetBtn.UseVisualStyleBackColor = true;
+            resetBtn.UseVisualStyleBackColor = false;
             resetBtn.Click += resetBtn_Click;
             // 
             // toDataGridView
             // 
             toDataGridView.AllowUserToAddRows = false;
+            toDataGridView.BackgroundColor = Color.FromArgb(216, 196, 182);
             toDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             toDataGridView.Location = new Point(606, 119);
             toDataGridView.Name = "toDataGridView";
@@ -135,6 +143,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(33, 53, 85);
             ClientSize = new Size(1161, 615);
             Controls.Add(toDataGridView);
             Controls.Add(resetBtn);
@@ -145,6 +154,7 @@
             Controls.Add(fromComboBox);
             Controls.Add(toComboBox);
             Controls.Add(backBtn);
+            ForeColor = Color.Gray;
             Name = "TransferProductForm";
             Load += TransferProductForm_Load;
             ((System.ComponentModel.ISupportInitialize)fromDataGridView).EndInit();

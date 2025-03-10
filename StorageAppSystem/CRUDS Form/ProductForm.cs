@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace StorageAppSystem
 {
-    public partial class ProductForm : MetroForm
+    public partial class ProductForm : Form
     {
         private AppDBContext db;
         public ProductForm()

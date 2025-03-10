@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            warehouseComboBox = new ComboBox();
-            label1 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             menuStrip1 = new MenuStrip();
             cRUDSToolStripMenuItem = new ToolStripMenuItem();
@@ -45,40 +43,10 @@
             productsReportToolStripMenuItem = new ToolStripMenuItem();
             ordersReportToolStripMenuItem = new ToolStripMenuItem();
             expirayReportToolStripMenuItem = new ToolStripMenuItem();
-            transferBulkProductsToolStripMenuItem = new ToolStripMenuItem();
             warehouseMultiReportToolStripMenuItem = new ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            transferBulkProductsToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(436, 105);
-            dataGridView1.MultiSelect = false;
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(553, 269);
-            dataGridView1.TabIndex = 1;
-            // 
-            // warehouseComboBox
-            // 
-            warehouseComboBox.FormattingEnabled = true;
-            warehouseComboBox.Location = new Point(149, 134);
-            warehouseComboBox.Name = "warehouseComboBox";
-            warehouseComboBox.Size = new Size(264, 28);
-            warehouseComboBox.TabIndex = 2;
-            warehouseComboBox.SelectedIndexChanged += warehouseComboBox_SelectedIndexChanged;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(16, 138);
-            label1.Name = "label1";
-            label1.Size = new Size(88, 20);
-            label1.TabIndex = 3;
-            label1.Text = "Warehouses";
             // 
             // sqlCommand1
             // 
@@ -87,6 +55,7 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = Color.FromArgb(216, 196, 182);
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { cRUDSToolStripMenuItem, reportsToolStripMenuItem, transferBulkProductsToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
@@ -97,13 +66,19 @@
             // 
             // cRUDSToolStripMenuItem
             // 
+            cRUDSToolStripMenuItem.BackColor = Color.FromArgb(216, 196, 182);
+            cRUDSToolStripMenuItem.BackgroundImageLayout = ImageLayout.None;
             cRUDSToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { warehousesToolStripMenuItem, suppliersToolStripMenuItem, productsToolStripMenuItem, clientsToolStripMenuItem, supplyOrdersToolStripMenuItem, clientOrdersToolStripMenuItem });
+            cRUDSToolStripMenuItem.ForeColor = Color.FromArgb(62, 88, 121);
             cRUDSToolStripMenuItem.Name = "cRUDSToolStripMenuItem";
             cRUDSToolStripMenuItem.Size = new Size(70, 24);
             cRUDSToolStripMenuItem.Text = "CRUDS";
             // 
             // warehousesToolStripMenuItem
             // 
+            warehousesToolStripMenuItem.BackColor = Color.FromArgb(216, 196, 182);
+            warehousesToolStripMenuItem.BackgroundImageLayout = ImageLayout.None;
+            warehousesToolStripMenuItem.ForeColor = Color.FromArgb(62, 88, 121);
             warehousesToolStripMenuItem.Name = "warehousesToolStripMenuItem";
             warehousesToolStripMenuItem.Size = new Size(185, 26);
             warehousesToolStripMenuItem.Text = "Warehouses";
@@ -111,6 +86,9 @@
             // 
             // suppliersToolStripMenuItem
             // 
+            suppliersToolStripMenuItem.BackColor = Color.FromArgb(216, 196, 182);
+            suppliersToolStripMenuItem.BackgroundImageLayout = ImageLayout.None;
+            suppliersToolStripMenuItem.ForeColor = Color.FromArgb(62, 88, 121);
             suppliersToolStripMenuItem.Name = "suppliersToolStripMenuItem";
             suppliersToolStripMenuItem.Size = new Size(185, 26);
             suppliersToolStripMenuItem.Text = "Suppliers";
@@ -118,6 +96,9 @@
             // 
             // productsToolStripMenuItem
             // 
+            productsToolStripMenuItem.BackColor = Color.FromArgb(216, 196, 182);
+            productsToolStripMenuItem.BackgroundImageLayout = ImageLayout.None;
+            productsToolStripMenuItem.ForeColor = Color.FromArgb(62, 88, 121);
             productsToolStripMenuItem.Name = "productsToolStripMenuItem";
             productsToolStripMenuItem.Size = new Size(185, 26);
             productsToolStripMenuItem.Text = "Products";
@@ -125,6 +106,9 @@
             // 
             // clientsToolStripMenuItem
             // 
+            clientsToolStripMenuItem.BackColor = Color.FromArgb(216, 196, 182);
+            clientsToolStripMenuItem.BackgroundImageLayout = ImageLayout.None;
+            clientsToolStripMenuItem.ForeColor = Color.FromArgb(62, 88, 121);
             clientsToolStripMenuItem.Name = "clientsToolStripMenuItem";
             clientsToolStripMenuItem.Size = new Size(185, 26);
             clientsToolStripMenuItem.Text = "Clients";
@@ -132,6 +116,9 @@
             // 
             // supplyOrdersToolStripMenuItem
             // 
+            supplyOrdersToolStripMenuItem.BackColor = Color.FromArgb(216, 196, 182);
+            supplyOrdersToolStripMenuItem.BackgroundImageLayout = ImageLayout.None;
+            supplyOrdersToolStripMenuItem.ForeColor = Color.FromArgb(62, 88, 121);
             supplyOrdersToolStripMenuItem.Name = "supplyOrdersToolStripMenuItem";
             supplyOrdersToolStripMenuItem.Size = new Size(185, 26);
             supplyOrdersToolStripMenuItem.Text = "Supply Orders";
@@ -139,6 +126,9 @@
             // 
             // clientOrdersToolStripMenuItem
             // 
+            clientOrdersToolStripMenuItem.BackColor = Color.FromArgb(216, 196, 182);
+            clientOrdersToolStripMenuItem.BackgroundImageLayout = ImageLayout.None;
+            clientOrdersToolStripMenuItem.ForeColor = Color.FromArgb(62, 88, 121);
             clientOrdersToolStripMenuItem.Name = "clientOrdersToolStripMenuItem";
             clientOrdersToolStripMenuItem.Size = new Size(185, 26);
             clientOrdersToolStripMenuItem.Text = "Client Orders";
@@ -146,13 +136,17 @@
             // 
             // reportsToolStripMenuItem
             // 
+            reportsToolStripMenuItem.BackColor = Color.FromArgb(216, 196, 182);
             reportsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { warehouseReportToolStripMenuItem, productsReportToolStripMenuItem, ordersReportToolStripMenuItem, expirayReportToolStripMenuItem, warehouseMultiReportToolStripMenuItem });
+            reportsToolStripMenuItem.ForeColor = Color.FromArgb(62, 88, 121);
             reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
             reportsToolStripMenuItem.Size = new Size(74, 24);
             reportsToolStripMenuItem.Text = "Reports";
             // 
             // warehouseReportToolStripMenuItem
             // 
+            warehouseReportToolStripMenuItem.BackColor = Color.FromArgb(216, 196, 182);
+            warehouseReportToolStripMenuItem.ForeColor = Color.FromArgb(62, 88, 121);
             warehouseReportToolStripMenuItem.Name = "warehouseReportToolStripMenuItem";
             warehouseReportToolStripMenuItem.Size = new Size(248, 26);
             warehouseReportToolStripMenuItem.Text = "Warehouse Report";
@@ -160,6 +154,8 @@
             // 
             // productsReportToolStripMenuItem
             // 
+            productsReportToolStripMenuItem.BackColor = Color.FromArgb(216, 196, 182);
+            productsReportToolStripMenuItem.ForeColor = Color.FromArgb(62, 88, 121);
             productsReportToolStripMenuItem.Name = "productsReportToolStripMenuItem";
             productsReportToolStripMenuItem.Size = new Size(248, 26);
             productsReportToolStripMenuItem.Text = "Products Report";
@@ -167,6 +163,8 @@
             // 
             // ordersReportToolStripMenuItem
             // 
+            ordersReportToolStripMenuItem.BackColor = Color.FromArgb(216, 196, 182);
+            ordersReportToolStripMenuItem.ForeColor = Color.FromArgb(62, 88, 121);
             ordersReportToolStripMenuItem.Name = "ordersReportToolStripMenuItem";
             ordersReportToolStripMenuItem.Size = new Size(248, 26);
             ordersReportToolStripMenuItem.Text = "Orders Report";
@@ -174,38 +172,44 @@
             // 
             // expirayReportToolStripMenuItem
             // 
+            expirayReportToolStripMenuItem.BackColor = Color.FromArgb(216, 196, 182);
+            expirayReportToolStripMenuItem.ForeColor = Color.FromArgb(62, 88, 121);
             expirayReportToolStripMenuItem.Name = "expirayReportToolStripMenuItem";
             expirayReportToolStripMenuItem.Size = new Size(248, 26);
             expirayReportToolStripMenuItem.Text = "Expiry Report";
             expirayReportToolStripMenuItem.Click += expirayReportToolStripMenuItem_Click;
             // 
-            // transferBulkProductsToolStripMenuItem
-            // 
-            transferBulkProductsToolStripMenuItem.Name = "transferBulkProductsToolStripMenuItem";
-            transferBulkProductsToolStripMenuItem.Size = new Size(168, 24);
-            transferBulkProductsToolStripMenuItem.Text = "Transfer Bulk Products";
-            transferBulkProductsToolStripMenuItem.Click += transferProduct_Click;
-            // 
             // warehouseMultiReportToolStripMenuItem
             // 
+            warehouseMultiReportToolStripMenuItem.BackColor = Color.FromArgb(216, 196, 182);
+            warehouseMultiReportToolStripMenuItem.ForeColor = Color.FromArgb(62, 88, 121);
             warehouseMultiReportToolStripMenuItem.Name = "warehouseMultiReportToolStripMenuItem";
             warehouseMultiReportToolStripMenuItem.Size = new Size(248, 26);
             warehouseMultiReportToolStripMenuItem.Text = "WarehouseMulti Report";
             warehouseMultiReportToolStripMenuItem.Click += warehouseMultiReportToolStripMenuItem_Click;
             // 
+            // transferBulkProductsToolStripMenuItem
+            // 
+            transferBulkProductsToolStripMenuItem.BackColor = Color.FromArgb(216, 196, 182);
+            transferBulkProductsToolStripMenuItem.ForeColor = Color.FromArgb(62, 88, 121);
+            transferBulkProductsToolStripMenuItem.Name = "transferBulkProductsToolStripMenuItem";
+            transferBulkProductsToolStripMenuItem.Size = new Size(168, 24);
+            transferBulkProductsToolStripMenuItem.Text = "Transfer Bulk Products";
+            transferBulkProductsToolStripMenuItem.Click += transferProduct_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1009, 387);
-            Controls.Add(label1);
-            Controls.Add(warehouseComboBox);
-            Controls.Add(dataGridView1);
+            BackColor = Color.FromArgb(33, 53, 85);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1009, 573);
             Controls.Add(menuStrip1);
+            DoubleBuffered = true;
+            ForeColor = Color.FromArgb(245, 239, 231);
             MainMenuStrip = menuStrip1;
             Name = "MainForm";
-            Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -213,9 +217,6 @@
         }
 
         #endregion
-        private DataGridView dataGridView1;
-        private ComboBox warehouseComboBox;
-        private Label label1;
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem cRUDSToolStripMenuItem;

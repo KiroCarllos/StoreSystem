@@ -45,59 +45,71 @@
             // 
             // backBtn
             // 
+            backBtn.BackColor = Color.FromArgb(216, 196, 182);
+            backBtn.FlatStyle = FlatStyle.Popup;
+            backBtn.ForeColor = Color.FromArgb(62, 88, 121);
             backBtn.Location = new Point(12, 12);
             backBtn.Name = "backBtn";
             backBtn.Size = new Size(94, 29);
             backBtn.TabIndex = 1;
             backBtn.Text = "Back";
-            backBtn.UseVisualStyleBackColor = true;
+            backBtn.UseVisualStyleBackColor = false;
             backBtn.Click += backBtn_Click;
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = Color.Black;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(2, 130);
+            dataGridView1.Location = new Point(27, 125);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(1189, 396);
+            dataGridView1.Size = new Size(1135, 396);
             dataGridView1.TabIndex = 2;
             // 
             // resetBtn
             // 
+            resetBtn.BackColor = Color.FromArgb(216, 196, 182);
+            resetBtn.FlatStyle = FlatStyle.Popup;
+            resetBtn.ForeColor = Color.FromArgb(62, 88, 121);
             resetBtn.Location = new Point(820, 22);
             resetBtn.Name = "resetBtn";
             resetBtn.Size = new Size(94, 29);
             resetBtn.TabIndex = 8;
             resetBtn.Text = "Reset";
-            resetBtn.UseVisualStyleBackColor = true;
+            resetBtn.UseVisualStyleBackColor = false;
             resetBtn.Click += resetBtn_Click;
             // 
             // filterBtn
             // 
+            filterBtn.BackColor = Color.FromArgb(216, 196, 182);
+            filterBtn.FlatStyle = FlatStyle.Popup;
+            filterBtn.ForeColor = Color.FromArgb(62, 88, 121);
             filterBtn.Location = new Point(934, 22);
             filterBtn.Name = "filterBtn";
             filterBtn.Size = new Size(94, 29);
             filterBtn.TabIndex = 7;
             filterBtn.Text = "Filter";
-            filterBtn.UseVisualStyleBackColor = true;
+            filterBtn.UseVisualStyleBackColor = false;
             filterBtn.Click += filterBtn_Click;
             // 
             // groupBox1
             // 
+            groupBox1.BackColor = Color.FromArgb(216, 196, 182);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(resetBtn);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(dateTimePicker2);
             groupBox1.Controls.Add(filterBtn);
             groupBox1.Controls.Add(dateTimePicker1);
-            groupBox1.Location = new Point(112, 12);
+            groupBox1.ForeColor = Color.FromArgb(62, 88, 121);
+            groupBox1.Location = new Point(121, 14);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(1050, 63);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
-            groupBox1.Text = "search";
+            groupBox1.Text = "Search";
             // 
             // label1
             // 
@@ -119,6 +131,9 @@
             // 
             // dateTimePicker2
             // 
+            dateTimePicker2.CalendarMonthBackground = Color.FromArgb(33, 53, 85);
+            dateTimePicker2.CalendarTitleBackColor = Color.FromArgb(216, 196, 182);
+            dateTimePicker2.CalendarTitleForeColor = Color.FromArgb(245, 239, 231);
             dateTimePicker2.Location = new Point(406, 28);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(250, 27);
@@ -126,6 +141,9 @@
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.CalendarMonthBackground = Color.FromArgb(33, 53, 85);
+            dateTimePicker1.CalendarTitleBackColor = Color.FromArgb(216, 196, 182);
+            dateTimePicker1.CalendarTitleForeColor = Color.FromArgb(245, 239, 231);
             dateTimePicker1.Location = new Point(68, 28);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(250, 27);
@@ -152,12 +170,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(33, 53, 85);
             ClientSize = new Size(1200, 533);
             Controls.Add(label3);
             Controls.Add(textBox1);
             Controls.Add(groupBox1);
             Controls.Add(dataGridView1);
             Controls.Add(backBtn);
+            ForeColor = Color.Gray;
             Name = "ExpiryForm";
             Text = "ExpiryForm";
             Load += ExpiryForm_Load;

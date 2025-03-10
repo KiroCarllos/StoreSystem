@@ -45,27 +45,34 @@
             // 
             // backBtn
             // 
-            backBtn.Location = new Point(19, 31);
+            backBtn.BackColor = Color.FromArgb(216, 196, 182);
+            backBtn.FlatStyle = FlatStyle.Popup;
+            backBtn.ForeColor = Color.FromArgb(0, 3, 66, 51);
+            backBtn.Location = new Point(10, 6);
             backBtn.Name = "backBtn";
             backBtn.Size = new Size(94, 29);
             backBtn.TabIndex = 0;
             backBtn.Text = "Back";
-            backBtn.UseVisualStyleBackColor = true;
+            backBtn.UseVisualStyleBackColor = false;
             backBtn.Click += backBtn_Click;
             // 
             // addBtn
             // 
-            addBtn.Location = new Point(1123, 31);
+            addBtn.BackColor = Color.FromArgb(216, 196, 182);
+            addBtn.FlatStyle = FlatStyle.Popup;
+            addBtn.ForeColor = Color.FromArgb(0, 3, 66, 51);
+            addBtn.Location = new Point(10, 479);
             addBtn.Name = "addBtn";
-            addBtn.Size = new Size(94, 29);
+            addBtn.Size = new Size(526, 64);
             addBtn.TabIndex = 1;
             addBtn.Text = "Add";
-            addBtn.UseVisualStyleBackColor = true;
+            addBtn.UseVisualStyleBackColor = false;
             addBtn.Click += addBtn_Click;
             // 
             // ordersDataGridView
             // 
             ordersDataGridView.AllowUserToAddRows = false;
+            ordersDataGridView.BackgroundColor = Color.FromArgb(216, 196, 182);
             ordersDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             ordersDataGridView.Location = new Point(542, 66);
             ordersDataGridView.Name = "ordersDataGridView";
@@ -78,6 +85,7 @@
             // wareProductDataGridView
             // 
             wareProductDataGridView.AllowUserToAddRows = false;
+            wareProductDataGridView.BackgroundColor = Color.FromArgb(216, 196, 182);
             wareProductDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             wareProductDataGridView.Location = new Point(542, 312);
             wareProductDataGridView.Name = "wareProductDataGridView";
@@ -90,9 +98,10 @@
             // clientProductDataGridView
             // 
             clientProductDataGridView.AllowUserToAddRows = false;
+            clientProductDataGridView.BackgroundColor = Color.FromArgb(216, 196, 182);
             clientProductDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             clientProductDataGridView.EditMode = DataGridViewEditMode.EditProgrammatically;
-            clientProductDataGridView.Location = new Point(10, 123);
+            clientProductDataGridView.Location = new Point(10, 80);
             clientProductDataGridView.Name = "clientProductDataGridView";
             clientProductDataGridView.RowHeadersWidth = 51;
             clientProductDataGridView.Size = new Size(526, 393);
@@ -100,18 +109,21 @@
             // 
             // saveBtn
             // 
-            saveBtn.Location = new Point(10, 522);
+            saveBtn.BackColor = Color.FromArgb(216, 196, 182);
+            saveBtn.FlatStyle = FlatStyle.Popup;
+            saveBtn.ForeColor = Color.FromArgb(0, 3, 66, 51);
+            saveBtn.Location = new Point(10, 549);
             saveBtn.Name = "saveBtn";
-            saveBtn.Size = new Size(526, 71);
+            saveBtn.Size = new Size(526, 57);
             saveBtn.TabIndex = 8;
             saveBtn.Text = "Save";
-            saveBtn.UseVisualStyleBackColor = true;
+            saveBtn.UseVisualStyleBackColor = false;
             saveBtn.Click += saveBtn_Click;
             // 
             // wareComboBox
             // 
             wareComboBox.FormattingEnabled = true;
-            wareComboBox.Location = new Point(122, 82);
+            wareComboBox.Location = new Point(112, 46);
             wareComboBox.Name = "wareComboBox";
             wareComboBox.Size = new Size(414, 28);
             wareComboBox.TabIndex = 9;
@@ -120,7 +132,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(10, 85);
+            label1.Location = new Point(0, 49);
             label1.Name = "label1";
             label1.Size = new Size(88, 20);
             label1.TabIndex = 10;
@@ -128,28 +140,35 @@
             // 
             // resetBtn
             // 
-            resetBtn.Location = new Point(442, 31);
+            resetBtn.BackColor = Color.FromArgb(216, 196, 182);
+            resetBtn.FlatStyle = FlatStyle.Popup;
+            resetBtn.ForeColor = Color.FromArgb(0, 3, 66, 51);
+            resetBtn.Location = new Point(620, 31);
             resetBtn.Name = "resetBtn";
-            resetBtn.Size = new Size(94, 29);
+            resetBtn.Size = new Size(508, 29);
             resetBtn.TabIndex = 11;
             resetBtn.Text = "Reset";
-            resetBtn.UseVisualStyleBackColor = true;
+            resetBtn.UseVisualStyleBackColor = false;
             resetBtn.Click += resetBtn_Click;
             // 
             // deleteBtn
             // 
-            deleteBtn.Location = new Point(10, 600);
+            deleteBtn.BackColor = Color.FromArgb(216, 196, 182);
+            deleteBtn.FlatStyle = FlatStyle.Popup;
+            deleteBtn.ForeColor = Color.FromArgb(0, 3, 66, 51);
+            deleteBtn.Location = new Point(10, 612);
             deleteBtn.Name = "deleteBtn";
-            deleteBtn.Size = new Size(526, 71);
+            deleteBtn.Size = new Size(526, 59);
             deleteBtn.TabIndex = 12;
             deleteBtn.Text = "Delete";
-            deleteBtn.UseVisualStyleBackColor = true;
+            deleteBtn.UseVisualStyleBackColor = false;
             deleteBtn.Click += deleteBtn_Click;
             // 
             // SaleForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(33, 53, 85);
             ClientSize = new Size(1222, 694);
             Controls.Add(deleteBtn);
             Controls.Add(resetBtn);
@@ -161,8 +180,9 @@
             Controls.Add(ordersDataGridView);
             Controls.Add(addBtn);
             Controls.Add(backBtn);
+            ForeColor = Color.Gray;
             Name = "SaleForm";
-            Resizable = false;
+            Text = "Sale";
             Load += SaleForm_Load;
             ((System.ComponentModel.ISupportInitialize)ordersDataGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)wareProductDataGridView).EndInit();

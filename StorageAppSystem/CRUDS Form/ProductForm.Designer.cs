@@ -44,28 +44,34 @@
             // 
             // backBtn
             // 
-            backBtn.Location = new Point(7, 37);
+            backBtn.BackColor = Color.FromArgb(216, 196, 182);
+            backBtn.FlatStyle = FlatStyle.Popup;
+            backBtn.ForeColor = Color.FromArgb(62, 88, 121);
+            backBtn.Location = new Point(12, 6);
             backBtn.Name = "backBtn";
-            backBtn.Size = new Size(94, 29);
+            backBtn.Size = new Size(62, 29);
             backBtn.TabIndex = 0;
             backBtn.Text = "Back";
-            backBtn.UseVisualStyleBackColor = true;
+            backBtn.UseVisualStyleBackColor = false;
             backBtn.Click += backBtn_Click;
             // 
             // button1
             // 
-            button1.Location = new Point(211, 37);
+            button1.BackColor = Color.FromArgb(216, 196, 182);
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.ForeColor = Color.FromArgb(62, 88, 121);
+            button1.Location = new Point(773, 6);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(268, 29);
             button1.TabIndex = 63;
             button1.Text = "Reset";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(21, 153);
+            label6.Location = new Point(35, 230);
             label6.Name = "label6";
             label6.Size = new Size(64, 20);
             label6.TabIndex = 60;
@@ -73,45 +79,54 @@
             // 
             // barcodeTextBox
             // 
-            barcodeTextBox.Location = new Point(95, 153);
+            barcodeTextBox.Location = new Point(109, 230);
             barcodeTextBox.Name = "barcodeTextBox";
             barcodeTextBox.Size = new Size(211, 27);
             barcodeTextBox.TabIndex = 59;
             // 
             // deleteBtn
             // 
-            deleteBtn.Location = new Point(211, 327);
+            deleteBtn.BackColor = Color.FromArgb(216, 196, 182);
+            deleteBtn.FlatStyle = FlatStyle.Popup;
+            deleteBtn.ForeColor = Color.FromArgb(62, 88, 121);
+            deleteBtn.Location = new Point(251, 295);
             deleteBtn.Name = "deleteBtn";
             deleteBtn.Size = new Size(94, 51);
             deleteBtn.TabIndex = 57;
             deleteBtn.Text = "Delete";
-            deleteBtn.UseVisualStyleBackColor = true;
+            deleteBtn.UseVisualStyleBackColor = false;
             deleteBtn.Click += deleteBtn_Click;
             // 
             // editBtn
             // 
-            editBtn.Location = new Point(107, 328);
+            editBtn.BackColor = Color.FromArgb(216, 196, 182);
+            editBtn.FlatStyle = FlatStyle.Popup;
+            editBtn.ForeColor = Color.FromArgb(33, 53, 85);
+            editBtn.Location = new Point(151, 295);
             editBtn.Name = "editBtn";
             editBtn.Size = new Size(94, 51);
             editBtn.TabIndex = 56;
             editBtn.Text = "Edit";
-            editBtn.UseVisualStyleBackColor = true;
+            editBtn.UseVisualStyleBackColor = false;
             editBtn.Click += editBtn_Click;
             // 
             // addBtn
             // 
-            addBtn.Location = new Point(7, 328);
+            addBtn.BackColor = Color.FromArgb(216, 196, 182);
+            addBtn.FlatStyle = FlatStyle.Popup;
+            addBtn.ForeColor = Color.FromArgb(33, 53, 85);
+            addBtn.Location = new Point(51, 296);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(94, 51);
             addBtn.TabIndex = 55;
             addBtn.Text = "Add";
-            addBtn.UseVisualStyleBackColor = true;
+            addBtn.UseVisualStyleBackColor = false;
             addBtn.Click += addBtn_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(21, 84);
+            label2.Location = new Point(35, 161);
             label2.Name = "label2";
             label2.Size = new Size(49, 20);
             label2.TabIndex = 53;
@@ -120,23 +135,25 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(123, 41);
+            label1.Font = new Font("Yu Gothic", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(215, 6);
             label1.Name = "label1";
-            label1.Size = new Size(66, 20);
+            label1.Size = new Size(214, 56);
             label1.TabIndex = 52;
             label1.Text = "Products";
             // 
             // nameTextBox
             // 
-            nameTextBox.Location = new Point(95, 84);
+            nameTextBox.Location = new Point(109, 161);
             nameTextBox.Name = "nameTextBox";
             nameTextBox.Size = new Size(210, 27);
             nameTextBox.TabIndex = 50;
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = Color.FromArgb(216, 196, 182);
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(311, 41);
+            dataGridView1.Location = new Point(631, 41);
             dataGridView1.MultiSelect = false;
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
@@ -149,7 +166,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(876, 402);
+            BackColor = Color.FromArgb(33, 53, 85);
+            ClientSize = new Size(1211, 402);
             Controls.Add(button1);
             Controls.Add(label6);
             Controls.Add(barcodeTextBox);
@@ -161,8 +179,9 @@
             Controls.Add(nameTextBox);
             Controls.Add(dataGridView1);
             Controls.Add(backBtn);
+            ForeColor = Color.Gray;
             Name = "ProductForm";
-            Resizable = false;
+            Text = "Product";
             Load += ProductForm_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace StorageAppSystem
 {
-    public partial class SupplyOrderAddForm : MetroForm
+    public partial class SupplyOrderAddForm : Form
     {
         private AppDBContext db;
         public SupplyOrderAddForm()

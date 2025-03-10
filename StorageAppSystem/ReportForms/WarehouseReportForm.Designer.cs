@@ -43,19 +43,22 @@
             // 
             // backBtn
             // 
+            backBtn.BackColor = Color.FromArgb(216, 196, 182);
+            backBtn.ForeColor = Color.FromArgb(33, 53, 85);
             backBtn.Location = new Point(12, 12);
             backBtn.Name = "backBtn";
             backBtn.Size = new Size(94, 29);
             backBtn.TabIndex = 1;
             backBtn.Text = "Back";
-            backBtn.UseVisualStyleBackColor = true;
+            backBtn.UseVisualStyleBackColor = false;
             backBtn.Click += backBtn_Click;
             // 
             // warehousesDataGridView
             // 
             warehousesDataGridView.AllowUserToAddRows = false;
+            warehousesDataGridView.BackgroundColor = Color.FromArgb(216, 196, 182);
             warehousesDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            warehousesDataGridView.Location = new Point(12, 101);
+            warehousesDataGridView.Location = new Point(12, 92);
             warehousesDataGridView.MultiSelect = false;
             warehousesDataGridView.Name = "warehousesDataGridView";
             warehousesDataGridView.RowHeadersWidth = 51;
@@ -66,14 +69,14 @@
             // 
             // fromDateTimePicker
             // 
-            fromDateTimePicker.Location = new Point(485, 11);
+            fromDateTimePicker.Location = new Point(463, 31);
             fromDateTimePicker.Name = "fromDateTimePicker";
             fromDateTimePicker.Size = new Size(250, 27);
             fromDateTimePicker.TabIndex = 3;
             // 
             // toDateTimePicker
             // 
-            toDateTimePicker.Location = new Point(866, 14);
+            toDateTimePicker.Location = new Point(844, 34);
             toDateTimePicker.Name = "toDateTimePicker";
             toDateTimePicker.Size = new Size(250, 27);
             toDateTimePicker.TabIndex = 4;
@@ -81,7 +84,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(424, 12);
+            label1.Location = new Point(402, 32);
             label1.Name = "label1";
             label1.Size = new Size(43, 20);
             label1.TabIndex = 5;
@@ -90,7 +93,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(825, 16);
+            label2.Location = new Point(803, 36);
             label2.Name = "label2";
             label2.Size = new Size(25, 20);
             label2.TabIndex = 6;
@@ -99,8 +102,9 @@
             // wareProductGridView
             // 
             wareProductGridView.AllowUserToAddRows = false;
+            wareProductGridView.BackgroundColor = Color.FromArgb(216, 196, 182);
             wareProductGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            wareProductGridView.Location = new Point(592, 101);
+            wareProductGridView.Location = new Point(592, 92);
             wareProductGridView.MultiSelect = false;
             wareProductGridView.Name = "wareProductGridView";
             wareProductGridView.RowHeadersWidth = 51;
@@ -110,28 +114,33 @@
             // 
             // filterBtn
             // 
-            filterBtn.Location = new Point(1144, 12);
+            filterBtn.BackColor = Color.FromArgb(216, 196, 182);
+            filterBtn.ForeColor = Color.FromArgb(33, 53, 85);
+            filterBtn.Location = new Point(1130, 34);
             filterBtn.Name = "filterBtn";
             filterBtn.Size = new Size(94, 29);
             filterBtn.TabIndex = 8;
             filterBtn.Text = "Filter";
-            filterBtn.UseVisualStyleBackColor = true;
+            filterBtn.UseVisualStyleBackColor = false;
             filterBtn.Click += filterBtn_Click;
             // 
             // resetBtn
             // 
-            resetBtn.Location = new Point(1422, 16);
+            resetBtn.BackColor = Color.FromArgb(216, 196, 182);
+            resetBtn.ForeColor = Color.FromArgb(33, 53, 85);
+            resetBtn.Location = new Point(1422, 7);
             resetBtn.Name = "resetBtn";
             resetBtn.Size = new Size(94, 29);
             resetBtn.TabIndex = 9;
             resetBtn.Text = "Reset";
-            resetBtn.UseVisualStyleBackColor = true;
+            resetBtn.UseVisualStyleBackColor = false;
             resetBtn.Click += resetBtn_Click;
             // 
             // WarehouseReportForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(33, 53, 85);
             ClientSize = new Size(1528, 480);
             Controls.Add(resetBtn);
             Controls.Add(filterBtn);
@@ -142,6 +151,7 @@
             Controls.Add(fromDateTimePicker);
             Controls.Add(warehousesDataGridView);
             Controls.Add(backBtn);
+            ForeColor = Color.Gray;
             Name = "WarehouseReportForm";
             Text = "WarehouseForm";
             Load += WarehouseForm_Load;

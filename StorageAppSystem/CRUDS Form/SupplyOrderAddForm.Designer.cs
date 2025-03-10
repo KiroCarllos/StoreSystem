@@ -42,16 +42,19 @@
             // 
             // backBtn
             // 
-            backBtn.Location = new Point(5, 27);
+            backBtn.BackColor = Color.FromArgb(216, 196, 182);
+            backBtn.ForeColor = Color.FromArgb(33, 53, 85);
+            backBtn.Location = new Point(5, 7);
             backBtn.Name = "backBtn";
             backBtn.Size = new Size(94, 29);
             backBtn.TabIndex = 1;
             backBtn.Text = "Back";
-            backBtn.UseVisualStyleBackColor = true;
+            backBtn.UseVisualStyleBackColor = false;
             backBtn.Click += backBtn_Click;
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = Color.FromArgb(216, 196, 182);
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(5, 100);
             dataGridView1.MultiSelect = false;
@@ -65,7 +68,7 @@
             // warehouseCombobox
             // 
             warehouseCombobox.FormattingEnabled = true;
-            warehouseCombobox.Location = new Point(108, 387);
+            warehouseCombobox.Location = new Point(93, 382);
             warehouseCombobox.Name = "warehouseCombobox";
             warehouseCombobox.Size = new Size(194, 28);
             warehouseCombobox.TabIndex = 3;
@@ -82,8 +85,9 @@
             // dataGridView2
             // 
             dataGridView2.AllowUserToAddRows = false;
+            dataGridView2.BackgroundColor = Color.FromArgb(216, 196, 182);
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(308, 63);
+            dataGridView2.Location = new Point(509, 50);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 51;
             dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -93,29 +97,33 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.FromArgb(216, 196, 182);
+            button1.ForeColor = Color.FromArgb(33, 53, 85);
             button1.Location = new Point(5, 425);
             button1.Name = "button1";
             button1.Size = new Size(297, 48);
             button1.TabIndex = 8;
             button1.Text = "Add";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(93, 63);
+            label3.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(43, 50);
             label3.Name = "label3";
-            label3.Size = new Size(110, 20);
+            label3.Size = new Size(207, 38);
             label3.TabIndex = 9;
             label3.Text = "Select Products";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(329, 36);
+            label4.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(702, 7);
             label4.Name = "label4";
-            label4.Size = new Size(127, 20);
+            label4.Size = new Size(238, 38);
             label4.TabIndex = 10;
             label4.Text = "Selected Products";
             // 
@@ -123,7 +131,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1115, 476);
+            BackColor = Color.FromArgb(33, 53, 85);
+            ClientSize = new Size(1362, 476);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(button1);
@@ -132,8 +141,8 @@
             Controls.Add(warehouseCombobox);
             Controls.Add(dataGridView1);
             Controls.Add(backBtn);
+            ForeColor = Color.Gray;
             Name = "SupplyOrderAddForm";
-            Resizable = false;
             Load += SupplyOrderForm_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();

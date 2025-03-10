@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace StorageAppSystem
 {
-    public partial class ClientForm : MetroForm
+    public partial class ClientForm : Form
     {
         private AppDBContext db;
         public ClientForm()
@@ -131,5 +131,7 @@ namespace StorageAppSystem
                 MessageBox.Show("Please select on Client");
             }
         }
+
+   
     }
 }

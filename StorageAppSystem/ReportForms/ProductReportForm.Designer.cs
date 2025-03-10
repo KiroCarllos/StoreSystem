@@ -45,21 +45,25 @@
             // 
             // backBtn
             // 
+            backBtn.BackColor = Color.FromArgb(216, 196, 182);
+            backBtn.FlatStyle = FlatStyle.Popup;
+            backBtn.ForeColor = Color.FromArgb(62, 88, 121);
             backBtn.Location = new Point(12, 12);
             backBtn.Name = "backBtn";
             backBtn.Size = new Size(94, 29);
             backBtn.TabIndex = 1;
             backBtn.Text = "Back";
-            backBtn.UseVisualStyleBackColor = true;
+            backBtn.UseVisualStyleBackColor = false;
             backBtn.Click += backBtn_Click;
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = Color.FromArgb(216, 196, 182);
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(-3, 241);
+            dataGridView1.Location = new Point(13, 217);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(806, 312);
+            dataGridView1.Size = new Size(777, 312);
             dataGridView1.TabIndex = 2;
             // 
             // fromDateTimePicker
@@ -86,6 +90,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.BackColor = Color.FromArgb(216, 196, 182);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(searchBtn);
             groupBox1.Controls.Add(toDateTimePicker);
@@ -94,6 +99,7 @@
             groupBox1.Controls.Add(fromDateTimePicker);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(nameTextBox);
+            groupBox1.ForeColor = Color.FromArgb(62, 88, 121);
             groupBox1.Location = new Point(12, 47);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(791, 164);
@@ -112,12 +118,15 @@
             // 
             // searchBtn
             // 
+            searchBtn.BackColor = Color.FromArgb(216, 196, 182);
+            searchBtn.FlatStyle = FlatStyle.Popup;
+            searchBtn.ForeColor = Color.FromArgb(62, 88, 121);
             searchBtn.Location = new Point(684, 129);
             searchBtn.Name = "searchBtn";
             searchBtn.Size = new Size(94, 29);
             searchBtn.TabIndex = 8;
             searchBtn.Text = "Search";
-            searchBtn.UseVisualStyleBackColor = true;
+            searchBtn.UseVisualStyleBackColor = false;
             searchBtn.Click += searchBtn_Click;
             // 
             // label2
@@ -131,12 +140,15 @@
             // 
             // resetBtn
             // 
+            resetBtn.BackColor = Color.FromArgb(216, 196, 182);
+            resetBtn.FlatStyle = FlatStyle.Popup;
+            resetBtn.ForeColor = Color.FromArgb(62, 88, 121);
             resetBtn.Location = new Point(569, 129);
             resetBtn.Name = "resetBtn";
             resetBtn.Size = new Size(94, 29);
             resetBtn.TabIndex = 9;
             resetBtn.Text = "reset";
-            resetBtn.UseVisualStyleBackColor = true;
+            resetBtn.UseVisualStyleBackColor = false;
             resetBtn.Click += resetBtn_Click;
             // 
             // label1
@@ -152,10 +164,12 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(33, 53, 85);
             ClientSize = new Size(807, 565);
             Controls.Add(groupBox1);
             Controls.Add(dataGridView1);
             Controls.Add(backBtn);
+            ForeColor = Color.Gray;
             Name = "ProductReportForm";
             Text = "ProductForm";
             Load += ProductReportForm_Load;

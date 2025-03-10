@@ -53,17 +53,21 @@
             // 
             // filterBtn
             // 
-            filterBtn.Location = new Point(1138, 48);
+            filterBtn.BackColor = Color.FromArgb(216, 196, 182);
+            filterBtn.FlatStyle = FlatStyle.Popup;
+            filterBtn.ForeColor = Color.FromArgb(62, 88, 121);
+            filterBtn.Location = new Point(1189, 50);
             filterBtn.Name = "filterBtn";
             filterBtn.Size = new Size(94, 29);
             filterBtn.TabIndex = 17;
             filterBtn.Text = "Filter";
-            filterBtn.UseVisualStyleBackColor = true;
+            filterBtn.UseVisualStyleBackColor = false;
             filterBtn.Click += filterBtn_Click;
             // 
             // wareProductGridView
             // 
             wareProductGridView.AllowUserToAddRows = false;
+            wareProductGridView.BackgroundColor = Color.FromArgb(216, 196, 182);
             wareProductGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             wareProductGridView.Location = new Point(586, 137);
             wareProductGridView.MultiSelect = false;
@@ -108,6 +112,7 @@
             // warehousesDataGridView
             // 
             warehousesDataGridView.AllowUserToAddRows = false;
+            warehousesDataGridView.BackgroundColor = Color.FromArgb(216, 196, 182);
             warehousesDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             warehousesDataGridView.Location = new Point(6, 137);
             warehousesDataGridView.Name = "warehousesDataGridView";
@@ -119,18 +124,22 @@
             // 
             // backBtn
             // 
-            backBtn.Location = new Point(6, 48);
+            backBtn.BackColor = Color.FromArgb(216, 196, 182);
+            backBtn.FlatStyle = FlatStyle.Popup;
+            backBtn.ForeColor = Color.FromArgb(62, 88, 121);
+            backBtn.Location = new Point(12, 12);
             backBtn.Name = "backBtn";
             backBtn.Size = new Size(94, 29);
             backBtn.TabIndex = 10;
             backBtn.Text = "Back";
-            backBtn.UseVisualStyleBackColor = true;
+            backBtn.UseVisualStyleBackColor = false;
             backBtn.Click += backBtn_Click;
             // 
             // WarehouseMultiSelectReportForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(33, 53, 85);
             ClientSize = new Size(1514, 655);
             Controls.Add(resetBtn);
             Controls.Add(filterBtn);
@@ -141,6 +150,7 @@
             Controls.Add(fromDateTimePicker);
             Controls.Add(warehousesDataGridView);
             Controls.Add(backBtn);
+            ForeColor = Color.Gray;
             Name = "WarehouseMultiSelectReportForm";
             Text = "WarehouseMultiSelectForm";
             Load += WarehouseMultiSelectReportForm_Load;

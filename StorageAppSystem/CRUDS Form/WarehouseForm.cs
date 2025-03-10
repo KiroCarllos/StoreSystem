@@ -15,7 +15,7 @@ using System.Windows.Forms;
 
 namespace StorageAppSystem
 {
-    public partial class WarehouseForm : MetroForm
+    public partial class WarehouseForm : Form
     {
         private AppDBContext db;
         public WarehouseForm()

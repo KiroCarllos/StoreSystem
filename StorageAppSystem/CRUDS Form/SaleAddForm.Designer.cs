@@ -43,18 +43,21 @@
             // 
             // backBtn
             // 
-            backBtn.Location = new Point(23, 33);
+            backBtn.BackColor = Color.FromArgb(216, 196, 182);
+            backBtn.ForeColor = Color.FromArgb(62, 88, 121);
+            backBtn.Location = new Point(11, 17);
             backBtn.Name = "backBtn";
             backBtn.Size = new Size(94, 29);
             backBtn.TabIndex = 1;
             backBtn.Text = "Back";
-            backBtn.UseVisualStyleBackColor = true;
+            backBtn.UseVisualStyleBackColor = false;
             backBtn.Click += backBtn_Click;
             // 
             // wareProductDataGridView
             // 
+            wareProductDataGridView.BackgroundColor = Color.FromArgb(216, 196, 182);
             wareProductDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            wareProductDataGridView.Location = new Point(582, 33);
+            wareProductDataGridView.Location = new Point(582, 52);
             wareProductDataGridView.Name = "wareProductDataGridView";
             wareProductDataGridView.RowHeadersWidth = 51;
             wareProductDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -83,6 +86,7 @@
             // clientProductDataGridView
             // 
             clientProductDataGridView.AllowUserToAddRows = false;
+            clientProductDataGridView.BackgroundColor = Color.FromArgb(216, 196, 182);
             clientProductDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             clientProductDataGridView.EditMode = DataGridViewEditMode.EditProgrammatically;
             clientProductDataGridView.Location = new Point(23, 216);
@@ -110,29 +114,34 @@
             // 
             // addBtn
             // 
+            addBtn.BackColor = Color.FromArgb(216, 196, 182);
+            addBtn.ForeColor = Color.FromArgb(62, 88, 121);
             addBtn.Location = new Point(23, 547);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(553, 59);
             addBtn.TabIndex = 8;
             addBtn.Text = "Add";
-            addBtn.UseVisualStyleBackColor = true;
+            addBtn.UseVisualStyleBackColor = false;
             addBtn.Click += addBtn_Click;
             // 
             // resetBtn
             // 
-            resetBtn.Location = new Point(482, 33);
+            resetBtn.BackColor = Color.FromArgb(216, 196, 182);
+            resetBtn.ForeColor = Color.FromArgb(62, 88, 121);
+            resetBtn.Location = new Point(674, 17);
             resetBtn.Name = "resetBtn";
-            resetBtn.Size = new Size(94, 29);
+            resetBtn.Size = new Size(431, 29);
             resetBtn.TabIndex = 9;
             resetBtn.Text = "Reset";
-            resetBtn.UseVisualStyleBackColor = true;
+            resetBtn.UseVisualStyleBackColor = false;
             resetBtn.Click += resetBtn_Click;
             // 
-            // SaleForm
+            // SaleAddForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1155, 610);
+            BackColor = Color.FromArgb(33, 53, 85);
+            ClientSize = new Size(1164, 631);
             Controls.Add(resetBtn);
             Controls.Add(addBtn);
             Controls.Add(clientComboBox);
@@ -142,7 +151,9 @@
             Controls.Add(warehouseComboBox);
             Controls.Add(wareProductDataGridView);
             Controls.Add(backBtn);
-            Name = "SaleForm";
+            ForeColor = Color.Gray;
+            Name = "SaleAddForm";
+            Text = "SaleAdd";
             Load += SaleForm_Load;
             ((System.ComponentModel.ISupportInitialize)wareProductDataGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)clientProductDataGridView).EndInit();

@@ -45,18 +45,22 @@
             // 
             // backBtn
             // 
-            backBtn.Location = new Point(23, 27);
+            backBtn.BackColor = Color.FromArgb(216, 196, 182);
+            backBtn.FlatStyle = FlatStyle.Popup;
+            backBtn.ForeColor = Color.FromArgb(62, 88, 121);
+            backBtn.Location = new Point(12, 12);
             backBtn.Name = "backBtn";
             backBtn.Size = new Size(94, 29);
             backBtn.TabIndex = 1;
             backBtn.Text = "Back";
-            backBtn.UseVisualStyleBackColor = true;
+            backBtn.UseVisualStyleBackColor = false;
             backBtn.Click += backBtn_Click;
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = Color.FromArgb(216, 196, 182);
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(312, 31);
+            dataGridView1.Location = new Point(635, 132);
             dataGridView1.MultiSelect = false;
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
@@ -67,21 +71,21 @@
             // 
             // nameTextBox
             // 
-            nameTextBox.Location = new Point(107, 83);
+            nameTextBox.Location = new Point(145, 175);
             nameTextBox.Name = "nameTextBox";
             nameTextBox.Size = new Size(199, 27);
             nameTextBox.TabIndex = 3;
             // 
             // addressTextBox
             // 
-            addressTextBox.Location = new Point(107, 156);
+            addressTextBox.Location = new Point(145, 248);
             addressTextBox.Name = "addressTextBox";
             addressTextBox.Size = new Size(199, 27);
             addressTextBox.TabIndex = 4;
             // 
             // managerTextBox
             // 
-            managerTextBox.Location = new Point(107, 237);
+            managerTextBox.Location = new Point(145, 329);
             managerTextBox.Name = "managerTextBox";
             managerTextBox.Size = new Size(199, 27);
             managerTextBox.TabIndex = 5;
@@ -89,16 +93,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(180, 31);
+            label1.Font = new Font("Tahoma", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(387, 9);
             label1.Name = "label1";
-            label1.Size = new Size(88, 20);
+            label1.Size = new Size(279, 57);
             label1.TabIndex = 7;
             label1.Text = "Warehouses";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(19, 86);
+            label2.Location = new Point(57, 178);
             label2.Name = "label2";
             label2.Size = new Size(49, 20);
             label2.TabIndex = 8;
@@ -107,7 +112,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(19, 157);
+            label3.Location = new Point(57, 249);
             label3.Name = "label3";
             label3.Size = new Size(62, 20);
             label3.TabIndex = 9;
@@ -116,7 +121,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(19, 241);
+            label4.Location = new Point(57, 333);
             label4.Name = "label4";
             label4.Size = new Size(68, 20);
             label4.TabIndex = 10;
@@ -124,39 +129,49 @@
             // 
             // addBtn
             // 
-            addBtn.Location = new Point(8, 318);
+            addBtn.BackColor = Color.FromArgb(216, 196, 182);
+            addBtn.FlatStyle = FlatStyle.Popup;
+            addBtn.ForeColor = Color.FromArgb(62, 88, 121);
+            addBtn.Location = new Point(46, 410);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(94, 51);
             addBtn.TabIndex = 11;
             addBtn.Text = "Add";
-            addBtn.UseVisualStyleBackColor = true;
+            addBtn.UseVisualStyleBackColor = false;
             addBtn.Click += addBtn_Click;
             // 
             // editBtn
             // 
-            editBtn.Location = new Point(108, 318);
+            editBtn.BackColor = Color.FromArgb(216, 196, 182);
+            editBtn.FlatStyle = FlatStyle.Popup;
+            editBtn.ForeColor = Color.FromArgb(62, 88, 121);
+            editBtn.Location = new Point(146, 410);
             editBtn.Name = "editBtn";
             editBtn.Size = new Size(94, 51);
             editBtn.TabIndex = 12;
             editBtn.Text = "Edit";
-            editBtn.UseVisualStyleBackColor = true;
+            editBtn.UseVisualStyleBackColor = false;
             editBtn.Click += editBtn_Click;
             // 
             // deleteBtn
             // 
-            deleteBtn.Location = new Point(212, 317);
+            deleteBtn.BackColor = Color.FromArgb(216, 196, 182);
+            deleteBtn.FlatStyle = FlatStyle.Popup;
+            deleteBtn.ForeColor = Color.FromArgb(62, 88, 121);
+            deleteBtn.Location = new Point(250, 409);
             deleteBtn.Name = "deleteBtn";
             deleteBtn.Size = new Size(94, 51);
             deleteBtn.TabIndex = 13;
             deleteBtn.Text = "Delete";
-            deleteBtn.UseVisualStyleBackColor = true;
+            deleteBtn.UseVisualStyleBackColor = false;
             deleteBtn.Click += deleteBtn_Click;
             // 
             // WarehouseForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(884, 391);
+            BackColor = Color.FromArgb(33, 53, 85);
+            ClientSize = new Size(1241, 579);
             Controls.Add(deleteBtn);
             Controls.Add(editBtn);
             Controls.Add(addBtn);
@@ -169,7 +184,9 @@
             Controls.Add(nameTextBox);
             Controls.Add(dataGridView1);
             Controls.Add(backBtn);
+            ForeColor = Color.Gray;
             Name = "WarehouseForm";
+            Text = "Warehouses";
             Load += WarehouseForm_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
